@@ -16,7 +16,7 @@
 		</li>
 	</ul>
 	<br>
-	<p contenteditable="{{ $root.isMe(story.author) || $root.isAdmin() }}"
+	<p id='text' contenteditable="{{ $root.isMe(story.author) || $root.isAdmin() }}"
 		ng-model="story.paragraphs"
 		ng-model-options="{debounce: 500}"
 		ng-list="<br><br>"
